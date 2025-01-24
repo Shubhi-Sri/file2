@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Internet Connection Status</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+     <!--SW4gdGhlIHF1aWV0IHRvd24gb2YgRXZlcmJyb29rLCBuZXN0bGVkIGJldHdlZW4gcm9sbGluZyBoaWxscyBhbmQgbWlzdHkgbGFrZXMsIHRoZXJlIGxpdmVkIGEge
+     W91bmcgbXVzaWNpYW4gbmFtZWQgRWxhcmEuIFNoZSBoYWQgYW4gZXh0cmFvcmRpbmFyeSBnaWZ04oCUd2hlbmV2ZXIgc2hlIHBsYXllZCBoZXIgdmlvbGluLCB0aGUgd29
+     ybGQgYXJvdW5kIGhlciBzZWVtZWQgdG8gY29tZSBhbGl2ZS4gRmxvd2VycyBsZWFuZWQgaW4gY2xvc2VyLCBiaXJkcyBoYXJtb25pemVkIHdpdGggaGVyIG1lbG9kaWVzL
+     CBhbmQgdGhlIHdpbmQgd2hpc3BlcmVkIHRocm91Z2ggdGhlIHRyZWVzIGluIHBlcmZlY3Qgcmh5dGhtLgoKT2{5lIGV2ZW}5pbmcsIHdoaWxlIGV4cGxvcmluZyB0aGUgYX
+     R0aWMgb2YgaGVyIGdyY{W5kbW90aG}Vy4{oCZcyBvbGQgY2}90dGFnZSwgRWxhcmEgc3R1bWJsZWQgdXBvbiBhIGR1c3R5LCBsZWF0aGVyLWJvdW5kIGJvb2sgdGl0bGVkIFRo
+     ZSBTeW1waG9ueSBvZiBFY2hvZXMuIEluc2lkZSwgc2hlIGZvdW5kIGFuY2llbnQgbXVzaWNhbCBub3RlcyB1bmxpa2UgYW55dGhpbmcgc2hlIGhhZCBldmVyIHNlZW4uIE
+     N1cmlvc2l0eSBzcGFya2VkLCBzaGUgdG9vayBoZXIgdmlvbGluIGFuZCBwbGF5ZWQgdGh{lIGZpcnN0}IGxpbmUuCgpUaGUgbW9tZW50IHRoZSBib3cgdG91Y2hlZCB0aGUg
+     c3RyaW5ncywgYSBoYXVudGluZ2x5IGJl{YXV0aW}Z1bCB0dW5lIGZpbGxlZCB0aGUgYWlyLCBzZW5kaW5nIGEgc2hpdmVyIGRvd24gaGVyIHNwaW5lLiBTdWRkZW5seSwgdGh
+     lIHJvb20gc2hpbW1lcmVkLCBhbmQgYSB0cmFuc2x1Y2VudCBmaWd1cmUgb2YgYSB5b3VuZyB3b21hbiBhcHBlYXJlZCBiZWZvcmUgaGVyLiAiVGhhbmsgeW91LCIgdGhlIHN
+     waXJpdCB3aGlzcGVyZWQsIGhlciB2b2ljZSBlY2hvaW5nIGxpa2UgYSBzb2Z0IGx1bGxhYnkuICJJIGhhdmUgd2FpdGVkIGNlbnR1cmllcyB0byBoZWFyIHRoaXMgbWVsb2R
+     5IGFnYWluLiIKClRoZSBzcGlyaXQgaW50cm9kdWNlZCBoZXJzZWxmIGFzIEx5YW5uYSwgYSBtdXNpY2lhbiBmcm9tIGFuIGFnZSBsb25nIHBhc3QuIFNoZSBoYWQgY29tcG9
+     zZWQgdGhlIHBpZWNlIHRvIGhlYWwgYSBraW5nZG9tIHJhdmFlagces2{mD43Ew}nZWQgYnkgc29ycm93LCBidXQgYmVmb3JlIHNoZSBjb3VsZCBwZXJmb3JtIGl0LCBzaGUgbXlzdGVyaW91c2x
+     5IHZhbmlzaGVkLiAiVGhlIG1lbG9keSBob2xkcyBwb3dlciwiIEx5YW5uYSBleHBsYWluZWQuICJJdCBjYW4gbWVuZCBoZWF{ydHMsIGF3}YWtlbiBmb3Jnb3R0ZW4gZHJlYW1
+     zLCBhbmQgZXZlbiBicmlkZ2UgdGhlIGdhcCBiZXR3ZWVuIHdvcmxkcy4iCgpEZXRlcm1pbmVkIHRvIGhvbm9yIEx5YW5uYeKAmXMgbGVnYWN5LCBFbGFyYSBlbWJhcmtlZCB
+     vbiBhIGpvdW5leSBhY3J{vc3MgdGhlIGtpb}mdkb20sIHBsYXlpbmcgdGhlIGZvcmdvdHRl{biBtZWxvZH}kgaW4gZXZlcnkgdG93biBhbmQgdmlsbGFnZSBzaGUgdmlzaXRlZC4
+     gV2l0aCBlYWNoIHBlcmZvcm1hbmNlLCBwZW9wbGUgd2VwdCwgbGF1Z2hlZCwgYW5kIHJlZGlzY292ZXJlZCB0aGVpciBsb25nLWxvc3QgaG9wZXMuIExlZ2VuZHMgb2YgdGh
+     lIGdpcmwgd2hvIHBsYXllZCB0aGUgc29uZyBvZiBkcmVhbXMgc3ByZWFkIGZhciBhbmQgd2lkZS4KCk9uZSBuaWdodCwgdW5kZXIgYSBzdGFyLWZpbGxlZCBza3ksIEVsYXJ
+     hIHBsYXllZCB0aGUgZmluYWwgbm90ZSBpbiB0aGUgZ3JhbmQgaGFsbCBvZiBFdmVyYnJvb2suIEFzIHRoZSBsYXN0IGVjaG8gZmFkZWQsIEx5YW5uYeKAmXMgc3Bpcml0IHN
+     taWxlZCBhbmQgd2hpc3BlcmVkLCAiTXkgd29yayBpcyBkb25lLiIgV2l0aCBhIHNvZnQgYnJlZXplLCBzaGUgdmFuaXNoZWQsIGxlYXZpbmcgYmVoaW5kIG9ubHkgYSBsaW5
+     nZXJpbmcgd2FybXRoIGluIEVsYXJhJ3MgaGVhcnQuCgpGcm9tIHRoYXQgZGF5IG9uLCBFbGFyYeKAmXMgbmFtZSB3YXMgZXRjaGVkIGludG8gdGhlIHRvd24ncyBoaXN0b3J5
+     LCBhbmQgdGhlIG1lbG9keSBvZiBkcmVhbXMgYmVjYW1lIGEgY2hlcmlzaGVkIHR1bmUgcGFzc2VkIGRvd24gZm9yIGdlbmVyYXRpb25z4oCUYSByZW1pbmRlciB0aGF0IG11c
+     2ljIGhhcyB0aGUgcG93ZXIgdG8gaGVhbCBldmVuIHRoZSBkZWVwZXN0IHdvdW5kcy4=-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="message">Sample Message</h1>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
